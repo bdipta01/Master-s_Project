@@ -1,0 +1,175 @@
+Warning: Design 'ChipTop' has '99' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ChipTop
+Version: W-2024.09-SP2
+Date   : Mon Mar 16 06:09:25 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: serial_tl_0_out_ready
+              (input port clocked by clk_serial)
+  Endpoint: system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/cdc_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by clk_serial)
+  Path Group: clk_serial
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ChipTop            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_serial (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  serial_tl_0_out_ready (in)                              0.00       2.00 r
+  iocell_serial_tl_0_out_ready/pad (GenericDigitalInIOCell_34)
+                                                          0.00       2.00 r
+  iocell_serial_tl_0_out_ready/U2/ZN (AND2_X1)            0.05       2.05 r
+  iocell_serial_tl_0_out_ready/i (GenericDigitalInIOCell_34)
+                                                          0.00       2.05 r
+  system/serial_tl_0_out_ready (DigitalTop)               0.00       2.05 r
+  system/serial_tl_domain/serial_tl_0_out_ready (SerialTL0ClockSinkDomain)
+                                                          0.00       2.05 r
+  system/serial_tl_domain/phy/io_outer_ser_out_ready (DecoupledSerialPhy)
+                                                          0.00       2.05 r
+  system/serial_tl_domain/phy/out_arb/io_out_ready (PhitArbiter_p32_f32_n5)
+                                                          0.00       2.05 r
+  system/serial_tl_domain/phy/out_arb/U59/ZN (NAND3_X1)
+                                                          0.06       2.11 f
+  system/serial_tl_domain/phy/out_arb/U11/ZN (NOR3_X1)
+                                                          0.07       2.17 r
+  system/serial_tl_domain/phy/out_arb/io_in_1_ready (PhitArbiter_p32_f32_n5)
+                                                          0.00       2.17 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/io_deq_ready (AsyncQueue_9)
+                                                          0.00       2.17 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_ready (AsyncQueueSink_Phit_9)
+                                                          0.00       2.17 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U28/ZN (NAND2_X1)
+                                                          0.04       2.22 f
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U8/ZN (NOR2_X1)
+                                                          0.07       2.28 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U24/ZN (NAND2_X1)
+                                                          0.04       2.33 f
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U10/ZN (NOR2_X1)
+                                                          0.06       2.38 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U21/Z (XOR2_X1)
+                                                          0.07       2.45 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U9/ZN (AND2_X1)
+                                                          0.07       2.53 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U20/Z (XOR2_X1)
+                                                          0.11       2.64 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U16/Z (XOR2_X1)
+                                                          0.08       2.73 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U30/ZN (NOR4_X1)
+                                                          0.03       2.76 f
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/U3/ZN (NOR2_X2)
+                                                          0.11       2.87 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/io_en (ClockCrossingReg_w32_9)
+                                                          0.00       2.87 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/U69/Z (BUF_X1)
+                                                          0.12       2.99 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/U67/Z (BUF_X1)
+                                                          0.06       3.05 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/U68/Z (BUF_X1)
+                                                          0.13       3.18 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/U5/ZN (NAND2_X1)
+                                                          0.05       3.24 f
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/U4/ZN (OAI21_X1)
+                                                          0.04       3.28 r
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/cdc_reg_reg[1]/D (DFF_X1)
+                                                          0.01       3.29 r
+  data arrival time                                                  3.29
+
+  clock clk_serial (rise edge)                           20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  system/serial_tl_domain/phy/out_phits_out_async_1/sink/io_deq_bits_deq_bits_reg/cdc_reg_reg[1]/CK (DFF_X1)
+                                                          0.00      19.90 r
+  library setup time                                     -0.03      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                 -3.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                       16.59
+
+
+  Startpoint: system/chipyard_prcictrl_domain/resetSynchronizer/nodeOut_member_allClocks_uncore_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+              (rising edge-triggered flip-flop clocked by clk_uncore)
+  Endpoint: system/coh_wrapper/l2/inclusive_cache_bank_sched/directory/wipeOff_reg
+            (rising edge-triggered flip-flop clocked by clk_uncore)
+  Path Group: clk_uncore
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ChipTop            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_uncore (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  system/chipyard_prcictrl_domain/resetSynchronizer/nodeOut_member_allClocks_uncore_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg/CK (SDFFR_X1)
+                                                          0.00 #     0.00 r
+  system/chipyard_prcictrl_domain/resetSynchronizer/nodeOut_member_allClocks_uncore_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg/Q (SDFFR_X1)
+                                                          0.17       0.17 f
+  system/chipyard_prcictrl_domain/resetSynchronizer/nodeOut_member_allClocks_uncore_reset_catcher/io_sync_reset_chain/output_chain/io_q (AsyncResetSynchronizerPrimitiveShiftReg_d3_i0_189)
+                                                          0.00       0.17 f
+  system/chipyard_prcictrl_domain/resetSynchronizer/nodeOut_member_allClocks_uncore_reset_catcher/io_sync_reset_chain/io_q (AsyncResetSynchronizerShiftReg_w1_d3_i0_6)
+                                                          0.00       0.17 f
+  system/chipyard_prcictrl_domain/resetSynchronizer/nodeOut_member_allClocks_uncore_reset_catcher/U2/ZN (INV_X32)
+                                                         77.74 #    77.91 r
+  system/chipyard_prcictrl_domain/resetSynchronizer/nodeOut_member_allClocks_uncore_reset_catcher/io_sync_reset (ResetCatchAndSync_d3_1)
+                                                          0.00 #    77.91 r
+  system/chipyard_prcictrl_domain/resetSynchronizer/auto_out_member_allClocks_uncore_reset (ClockGroupResetSynchronizer)
+                                                          0.00 #    77.91 r
+  system/chipyard_prcictrl_domain/auto_resetSynchronizer_out_member_allClocks_uncore_reset (ChipyardPRCICtrlClockSinkDomain)
+                                                          0.00 #    77.91 r
+  system/clockGroupCombiner/auto_clock_group_combiner_in_member_allClocks_uncore_reset (ClockGroupCombiner)
+                                                          0.00 #    77.91 r
+  system/clockGroupCombiner/auto_clock_group_combiner_out_member_allClocks_sbus_1_reset (ClockGroupCombiner)
+                                                          0.00 #    77.91 r
+  system/aggregator/auto_in_member_allClocks_sbus_1_reset (ClockGroupAggregator_allClocks)
+                                                          0.00 #    77.91 r
+  system/aggregator/auto_out_0_member_sbus_sbus_1_reset (ClockGroupAggregator_allClocks)
+                                                          0.00 #    77.91 r
+  system/sbus/auto_sbus_clock_groups_in_member_sbus_1_reset (SystemBus)
+                                                          0.00 #    77.91 r
+  system/sbus/auto_sbus_clock_groups_out_member_coh_0_reset (SystemBus)
+                                                          0.00 #    77.91 r
+  system/coh_wrapper/auto_coh_clock_groups_in_member_coh_0_reset (CoherenceManagerWrapper)
+                                                          0.00 #    77.91 r
+  system/coh_wrapper/l2/reset (InclusiveCache)            0.00 #    77.91 r
+  system/coh_wrapper/l2/inclusive_cache_bank_sched/reset (InclusiveCacheBankScheduler)
+                                                          0.00 #    77.91 r
+  system/coh_wrapper/l2/inclusive_cache_bank_sched/directory/reset (Directory)
+                                                          0.00 #    77.91 r
+  system/coh_wrapper/l2/inclusive_cache_bank_sched/directory/wipeOff_reg/D (DFF_X1)
+                                                          0.04 #    77.95 r
+  data arrival time                                                 77.95
+
+  clock clk_uncore (rise edge)                           10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  system/coh_wrapper/l2/inclusive_cache_bank_sched/directory/wipeOff_reg/CK (DFF_X1)
+                                                          0.00       9.90 r
+  library setup time                                     -5.50       4.40
+  data required time                                                 4.40
+  --------------------------------------------------------------------------
+  data required time                                                 4.40
+  data arrival time                                                -77.95
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -73.55
+
+
+1

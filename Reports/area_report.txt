@@ -1,0 +1,33 @@
+Warning: Design 'ChipTop' has '99' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : ChipTop
+Version: W-2024.09-SP2
+Date   : Mon Mar 16 06:09:31 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /usrf07/home/agids/stu/s_ids118/0_FreePDK45/LIB/NangateOpenCellLibrary_typical_ccs.db)
+
+Number of ports:                       469768
+Number of nets:                      10306062
+Number of cells:                      7660979
+Number of combinational cells:        5430409
+Number of sequential cells:           2221312
+Number of macros/black boxes:               0
+Number of buf/inv:                     857989
+Number of references:                      85
+
+Combinational area:            6669101.871049
+Buf/Inv area:                   579422.738434
+Noncombinational area:        10044971.999944
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:              16714073.870993
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
